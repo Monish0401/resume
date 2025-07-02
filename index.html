@@ -3,50 +3,109 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Monish C - Resume</title>
+  <title>Monish C | Portfolio</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f7f7f7;
+      font-family: "Segoe UI", sans-serif;
       margin: 0;
-      padding: 0;
+      background: #f2f2f2;
+      color: #333;
+    }
+
+    .header {
+      background: #111;
+      color: #fff;
+      padding: 40px 20px;
       text-align: center;
     }
-    .container {
-      max-width: 800px;
-      margin: 50px auto;
-      background: #fff;
-      padding: 30px;
-      border-radius: 8px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+
+    .header h1 {
+      margin: 0;
+      font-size: 36px;
     }
-    h1 {
+
+    .header h3 {
+      margin: 10px 0 0;
+      font-weight: normal;
+    }
+
+    .section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .section h2 {
+      border-bottom: 2px solid #007acc;
+      padding-bottom: 10px;
       margin-bottom: 20px;
+      color: #007acc;
     }
-    iframe {
-      width: 100%;
-      height: 1000px;
-      border: none;
+
+    ul {
+      padding-left: 20px;
     }
-    a.download-btn {
+
+    .download-btn {
       display: inline-block;
       margin-top: 20px;
       padding: 10px 20px;
       background: #007acc;
-      color: #fff;
+      color: white;
       text-decoration: none;
       border-radius: 5px;
     }
-    a.download-btn:hover {
+
+    .download-btn:hover {
       background: #005fa3;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Monish C - Resume</h1>
-    <iframe src="Monish%20Latest%20Resume.pdf"></iframe>
-    <a class="download-btn" href="Monish%20Latest%20Resume.pdf" download>Download PDF</a>
+
+  <div class="header">
+    <h1>Monish C</h1>
+    <h3>IT Professional | Software Developer | Cybersecurity Analyst</h3>
   </div>
+
+  <div class="section">
+    <h2>About Me</h2>
+    <p>
+      A dynamic tech enthusiast with hands-on experience in software development, cybersecurity, and IT infrastructure.
+      I specialize in full-stack web development and SOC operations. My passion lies in building efficient systems and defending digital ecosystems.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Skills</h2>
+    <ul>
+      <li><strong>Programming:</strong> Java, React, Spring Boot, PostgreSQL, XML, JSON, Gradle</li>
+      <li><strong>Cybersecurity:</strong> Palo Alto, Suricata, Evebox, SentinelOne, VirusTotal, Checkpoint Firewall</li>
+      <li><strong>Networking & Infrastructure:</strong> Network Administration, System Monitoring</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Experience</h2>
+    <ul>
+      <li><strong>AIIMS Hospital Delhi:</strong> SOC Level 1 Analyst – Managed real-time cybersecurity monitoring and threat mitigation.</li>
+      <li><strong>Bharat Electronics Limited (BEL):</strong> Full Stack Developer – Developed an attendance tracking system using React, Spring Boot, and PostgreSQL.</li>
+      <li><strong>ISRO SAC Ahmedabad:</strong> IT Infrastructure – Supported GSAT-6 Satellite Project with software development and infrastructure support.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Cybersecurity Solutions for AIIMS</strong> – SOC operations with advanced threat detection tools.</li>
+      <li><strong>Attendance Information System</strong> – Web-based workforce management system built with modern tech stack.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Download Resume</h2>
+    <a class="download-btn" href="Monish%20Latest%20Resume.pdf" download>📄 Download PDF Resume</a>
+  </div>
+
 </body>
 </html>
