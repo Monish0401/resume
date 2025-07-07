@@ -5,41 +5,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Monish C | Portfolio</title>
   <style>
+    :root {
+      --primary: #007acc;
+      --background: #f4f7f9;
+      --dark: #222;
+      --light: #fff;
+      --accent: #005fa3;
+    }
+
     body {
-      font-family: "Segoe UI", sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      background: #f2f2f2;
-      color: #333;
+      background: var(--background);
+      color: var(--dark);
+      scroll-behavior: smooth;
     }
 
-    .header {
-      background: #111;
-      color: #fff;
-      padding: 40px 20px;
+    header {
+      background: var(--primary);
+      color: var(--light);
       text-align: center;
+      padding: 60px 20px 40px;
     }
 
-    .header h1 {
-      margin: 0;
-      font-size: 36px;
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
     }
 
-    .header h3 {
-      margin: 10px 0 0;
+    header h3 {
       font-weight: normal;
+      font-size: 20px;
     }
 
-    .section {
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
       padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
     }
 
-    .section h2 {
-      border-bottom: 2px solid #007acc;
-      padding-bottom: 10px;
+    section {
+      margin-bottom: 60px;
+    }
+
+    section h2 {
+      font-size: 26px;
+      color: var(--primary);
+      border-bottom: 2px solid var(--primary);
+      display: inline-block;
       margin-bottom: 20px;
-      color: #007acc;
+    }
+
+    p, li {
+      font-size: 17px;
+      line-height: 1.6;
     }
 
     ul {
@@ -49,63 +68,90 @@
     .download-btn {
       display: inline-block;
       margin-top: 20px;
-      padding: 10px 20px;
-      background: #007acc;
+      padding: 12px 24px;
+      background: var(--primary);
       color: white;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background 0.3s ease;
     }
 
     .download-btn:hover {
-      background: #005fa3;
+      background: var(--accent);
+    }
+
+    footer {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 30px;
+      }
+      header h3 {
+        font-size: 16px;
+      }
     }
   </style>
 </head>
 <body>
 
-  <div class="header">
+  <header>
     <h1>Monish C</h1>
     <h3>IT Professional | Software Developer | Cybersecurity Analyst</h3>
+  </header>
+
+  <div class="container">
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        A passionate tech enthusiast with experience in software development, cybersecurity, and IT infrastructure.
+        I bring hands-on expertise in full-stack web development and SOC operations, with a strong problem-solving mindset.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li><strong>Languages & Frameworks:</strong> Java, React, Spring Boot, PostgreSQL, XML, JSON</li>
+        <li><strong>Cybersecurity Tools:</strong> Palo Alto Firewall, Suricata, SentinelOne, VirusTotal, Evebox</li>
+        <li><strong>Other Skills:</strong> Network Administration, System Monitoring, DevOps Basics</li>
+      </ul>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <ul>
+        <li><strong>BEL - Vizag:</strong> Full Stack Developer – Built an Attendance Information System using React, Java, and PostgreSQL (5 months)</li>
+        <li><strong>AIIMS Delhi:</strong> SOC Level 1 Analyst – Monitored and mitigated cybersecurity threats (6 months)</li>
+        <li><strong>ISRO SAC - Ahmedabad:</strong> IT Infrastructure Support – Assisted in GSAT-6 project’s backend development and server maintenance (2 months)</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Cybersecurity Solutions for AIIMS:</strong> Built and managed secure SOC operations to safeguard critical infrastructure.</li>
+        <li><strong>Attendance Management System:</strong> A robust web application to track employee attendance using React and Spring Boot.</li>
+      </ul>
+    </section>
+
+    <section id="resume">
+      <h2>Resume</h2>
+      <a class="download-btn" href="Monish%20Latest%20Resume.pdf" download>📄 Download My Resume</a>
+    </section>
+
   </div>
 
-  <div class="section">
-    <h2>About Me</h2>
-    <p>
-      A dynamic tech enthusiast with hands-on experience in software development, cybersecurity, and IT infrastructure.
-      I specialize in full-stack web development and SOC operations. My passion lies in building efficient systems and defending digital ecosystems.
-    </p>
-  </div>
-
-  <div class="section">
-    <h2>Skills</h2>
-    <ul>
-      <li><strong>Programming:</strong> Java, React, Spring Boot, PostgreSQL, XML, JSON, Gradle</li>
-      <li><strong>Cybersecurity:</strong> Palo Alto, Suricata, Evebox, SentinelOne, VirusTotal, Checkpoint Firewall</li>
-      <li><strong>Networking & Infrastructure:</strong> Network Administration, System Monitoring</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>Experience</h2>
-    <ul>
-      <li><strong>AIIMS Hospital Delhi:</strong> SOC Level 1 Analyst – Managed real-time cybersecurity monitoring and threat mitigation.</li>
-      <li><strong>Bharat Electronics Limited (BEL):</strong> Full Stack Developer – Developed an attendance tracking system using React, Spring Boot, and PostgreSQL.</li>
-      <li><strong>ISRO SAC Ahmedabad:</strong> IT Infrastructure – Supported GSAT-6 Satellite Project with software development and infrastructure support.</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>Cybersecurity Solutions for AIIMS</strong> – SOC operations with advanced threat detection tools.</li>
-      <li><strong>Attendance Information System</strong> – Web-based workforce management system built with modern tech stack.</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>Download Resume</h2>
-    <a class="download-btn" href="Monish%20Latest%20Resume.pdf" download>📄 Download PDF Resume</a>
-  </div>
+  <footer>
+    &copy; 2025 Monish C. All rights reserved.
+  </footer>
 
 </body>
 </html>
